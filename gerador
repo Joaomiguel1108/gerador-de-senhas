@@ -23,15 +23,16 @@ while sair >= 0:
         if tipo_de_senha == -1:
             print("Obrigado por utilizar")
             break
+        elif tipo_de_senha >  5:
+            print("Digite um numero valido")
+            break
         tamanho_da_senha: int = int(input("Digite o tamanho desejado para a senha: "))
+        
 
         
         while NameError == False and ValueError == False:
     
-            if tamanho_da_senha == 1 and tamanho_da_senha == 2 and tamanho_da_senha == 3 and tamanho_da_senha == 4 and tamanho_da_senha == 5:
-                sair = int(input("Deseja sair?\n[0] Não \n[-1]Sim")) 
-                if sair == -1:
-                    print("Obrigado por utilizar o programa")
+            if tamanho_da_senha < 12 and tamanho_da_senha > 0 and tipo_de_senha <= 5:
                 
                 if tipo_de_senha == 1:
                     gera_senha_minuscula()
