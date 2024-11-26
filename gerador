@@ -6,6 +6,11 @@ sair = 0
 while sair >= 0:
     
     try:
+        continuar = int(input("Deseja continuar?\n [-1] Sair\n [0] continuar"))
+        if continuar == -1:
+            sair == -1
+            break
+        
         print("==========gerador de senha==========")
         print("Tipos:\n"
         "1) Letras minúsculas\n"
@@ -28,6 +33,7 @@ while sair >= 0:
             break
         tamanho_da_senha: int = int(input("Digite o tamanho desejado para a senha: "))
         
+        
 
         
         while NameError == False and ValueError == False:
@@ -49,7 +55,7 @@ while sair >= 0:
             else:
                 print("Tipo de senha inválido, tente novamente...")
             
-                
+            
     
     
     except ValueError:
@@ -57,9 +63,9 @@ while sair >= 0:
         print("Digite um numero inteiro")
         
     except NameError:
-        print('AAAAAAAAAAAAAAAAAAAAAAA')
+        print('')
     except SyntaxError:
-        print("DASDSADASDASDASD")
+        print("")
         
     
 
